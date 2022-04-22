@@ -22,7 +22,7 @@ const ProductListing = () => {
   console.log(products);
 
   return (
-    <div className="ui grid container">
+    <div className="ui grid container" style={{ marginTop: "40px" }}>
       <ProductComponent />
     </div>
   );

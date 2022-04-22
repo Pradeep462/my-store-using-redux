@@ -35,7 +35,7 @@ const ProductDetails = () => {
       {Object.keys(product).length === 0 ? (
         <div>...Loading</div>
       ) : (
-        <div className="ui placeholder segment">
+        <div className="ui placeholder segment" style={{ margin: "60px 0" }}>
           <div className="ui two column stackable center aligned grid">
             <div className="ui vertical divider">AND</div>
             <div className="middle aligned row">
@@ -49,7 +49,11 @@ const ProductDetails = () => {
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
-                <div className="ui vertical animated button" tabIndex="0">
+                <div
+                  className="ui vertical animated button"
+                  tabIndex="0"
+                  style={{ backgroundColor: "red", color: "white" }}
+                >
                   <div className="hidden content">
                     <i className="shop icon"></i>
                   </div>

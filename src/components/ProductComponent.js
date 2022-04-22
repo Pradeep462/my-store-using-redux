@@ -14,9 +14,13 @@ const ProductComponent = () => {
             <div className="ui link cards">
               <div className="card">
                 <div className="image">
-                  <img src={image} alt={title} />
+                  <img
+                    style={{ width: "100%", height: "300px" }}
+                    src={image}
+                    alt={title}
+                  />
                 </div>
-                <div className="content">
+                <div className="content" style={{ maxheight: "170px" }}>
                   <div className="header">{title}</div>
                   <div className="meta price">$ {price}</div>
                   <div className="meta">{category}</div>
